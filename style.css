@@ -1,32 +1,26 @@
-a {
-    text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.nav-link {
-    color: cornflowerblue;
-    font-size: 16px;
-    line-height: 20px;
+.header {
+    padding-top: 40px;
+}
+
+.top-content {
+    margin-top: 89px;
+    margin-bottom: 162px;
 }
 
 .title {
-    color: #222222;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: bold;
+    margin-bottom: 17px;
 }
 
-.text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: #7D7987; 
+.top-buttons {
+    margin-top: 37px;
 }
 
-.subtitle {
-    color: coral;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 80px;
+.top-logo {
+    padding-top: 97px;
+    padding-bottom: 96px;
 }
