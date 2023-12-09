@@ -1,26 +1,275 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
     padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    width: 137px;
+    max-height: 40px;
+}
+
+.navbar {
+    width: 533px;
+    max-height: 17px;
+    display: flex;
+    gap: 30px;
+}
+
+.navbark-link {
+    color: #000;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.navbark-link:visited {
+    color: #000;
+    font-size: 200px;
+}
+
+.navbark-link:hover {
+    color: #F25822;
+}
+
+.active {
+    color: #F25822;
 }
 
 .top-content {
     margin-top: 89px;
     margin-bottom: 162px;
+    display: flex;
+    gap: 40px;
+}
+
+.top-info {
+    width: 522px;
+    max-height: 374px;
 }
 
 .title {
     margin-bottom: 17px;
+    color: #000;
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text {
+    color: #888;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .top-buttons {
     margin-top: 37px;
+    width: 302px;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.button:active {
+    transform: scale(0.98); 
+}
+
+.button-text {
+    color: #AAA;
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-img {
+    width: 544px;
+    height: 374px;
 }
 
 .top-logo {
     padding-top: 97px;
     padding-bottom: 96px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.advantages {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(3, 370px);
+}
+
+.adv-item {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.adv-item:nth-child(2) {
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.adv-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    margin-bottom: 17px;
+    color: #000;
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.adv-item > .text {
+    margin-bottom: 25px;
+    color: #666;
+    font-family: Gilroy-Regular, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+}
+
+.adv-link {
+    color: #000;
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */    
+}
+
+.choose {
+    padding-top: 92px;
+    padding-bottom: 100px;
+    background: #FAFAFA;
+}
+
+.choose > .title {
+    margin-bottom: 19px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.choose > .text {
+    margin: 0 auto 55px;
+    width: 682px;
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */ 
+}
+
+.choose-list {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(3, 370px);
+}
+
+.choose-item {
+    background: #FAFAFA;
+    height: 549px;
+}
+
+.choose-item:nth-child(2) {
+    background: #FFF;
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);    
+}
+
+.choose-img {
+    width: 370px;
+    height: 290px;
+}
+
+.choose-item > .subtitle {
+    margin-bottom: 22px;
+    color: #000;
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.choose-item > .text {
+    width: 310px;
+    text-align: center;
+    margin: 0 auto 39px;
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+}
+
+.choose-button {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin:0 auto 50px;
+    padding-left: 46px;
+    padding-right: 21px;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.5px */
+    text-align: center;
+    display: block;
 }
